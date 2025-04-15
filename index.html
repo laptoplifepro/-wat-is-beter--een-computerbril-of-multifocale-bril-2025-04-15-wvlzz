@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computerbril vs Multifocale bril | Wat is beter?</title>
+    <meta name="description" content="Ontdek wat beter is: een computerbril of multifocale bril. Expert advies en vergelijking.">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold text-blue-600">Computerbril.org</a>
+                <button @click="isOpen = !isOpen" class="lg:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                    <a href="#vergelijking" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Vergelijking</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Wat is beter: een Computerbril of Multifocale bril?
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed">
+                        Maak de juiste keuze voor uw ogen en comfort
+                    </p>
+                    <a href="https://computerbril.org" class="inline-flex items-center px-8 py-4 text-lg font-semibold text-white bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300">
+                        Ontdek meer
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="voordelen" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Voordelen van beide brillen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature cards here -->
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Veelgestelde vragen</h2>
+                <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
+                    <!-- FAQ items here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-blue-600 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-8">Klaar om de beste keuze te maken?</h2>
+                <p class="text-xl mb-12 text-blue-100">Ontdek welke bril het beste bij u past</p>
+                <a href="https://computerbril.org" class="inline-flex items-center px-8 py-4 text-lg font-semibold text-blue-600 bg-white rounded-full shadow-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300">
+                    Bekijk onze collectie
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+                    <p class="mb-4">
+                        <a href="mailto:info@computerbril.org" class="hover:text-white transition-colors duration-300">
+                            info@computerbril.org
+                        </a>
+                    </p>
+                </div>
+                <!-- Additional footer columns -->
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-gray-400">
+                <p>&copy; 2024 Computerbril.org. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
